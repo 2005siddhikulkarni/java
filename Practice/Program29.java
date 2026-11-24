@@ -1,27 +1,38 @@
+// Approach3
+
 import java.util.Scanner;
+
+class Arithmatic
+{
+     public static int Addition(int iNo1, int iNo2)
+    {
+        int iAns = 0;
+
+        iAns = iNo1 +iNo2;
+
+        return iAns;
+    }
+
+}
 
 class Program29
 {
     public static void main(String A[]) 
     {
         Scanner scanner = null;
-        String sName = null;
-        float fMarks = 0.0f;
-        int iAge = 0; 
-
         scanner = new Scanner(System.in);
 
-        System.out.println("Enter your name: ");
-        sName = scanner.nextLine();   
+        int iValue1 = 0, iValue2 = 0, iResult = 0;
 
-        System.out.println("Enter your age : ");
-        iAge = scanner.nextInt();
+        System.out.println("Enter first number: ");
+        iValue1 = scanner.nextInt();
 
-        System.out.println("Enter your marks: ");
-        fMarks = scanner.nextFloat();
+        System.out.println("Enter second number: ");
+        iValue2 = scanner.nextInt();
 
-        System.out.println("Welcome "+ sName);
-        System.out.println("Your age is : "+iAge);
-        System.out.println("Your marks : "+fMarks);
+        iResult = Arithmatic.Addition(iValue1, iValue2); 
+
+        System.out.println("Addition is : "+iResult);
+        
     }
 }
